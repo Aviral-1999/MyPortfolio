@@ -1,7 +1,4 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+
 <!doctype html>
 <html lang="en">
 
@@ -9,7 +6,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>UI Portfolio - Personal Category Bootstrap Responsive Website Template - Home : W3Layouts</title>
+    <title>Aviral Portfolio</title>
 
     <!-- google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;800&display=swap" rel="stylesheet">
@@ -30,7 +27,7 @@ Author URL: http://w3layouts.com
             <nav class="navbar navbar-expand-lg stroke">
                 <h1>
                     <a class="navbar-brand" href="index.html">
-                        <i class="fab fa-asymmetrik"></i> UI Portfolio
+                        <i class="fab fa-asymmetrik"></i> Creative Portfolio
                     </a>
                 </h1>
                 <!-- if logo is image enable this   
@@ -111,7 +108,7 @@ Author URL: http://w3layouts.com
         <div class="container pt-lg-5 pt-md-4">
             <div class="row pt-lg-5 pt-4">
                 <div class="col-lg-7 banner-info-grid pt-lg-0 pt-5">
-                    <h1 class="mb-3">Hi, I'm John Watson</h1>
+                    <h1 class="mb-3">Hi, I'm Aviral Sharma</h1>
                     <h3 class="mb-4"> <span class="typed-text"></span><span class="cursor">&nbsp</span> </h3>
                     <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can
                         give your business a new Creative start right away!</p>
@@ -121,7 +118,7 @@ Author URL: http://w3layouts.com
                     
                 </div>
                 <div class="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
-                    <img src="assets/images/banner.png" class="img-fluid" />
+                    <img src="assets/images/aviral.png" class="img-fluid" />
                 </div>
             </div>
         </div>
@@ -134,7 +131,7 @@ Author URL: http://w3layouts.com
         <div class="container py-md-5 py-2">
             <div class="row w3l-row">
                 <div class="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
-                    <img src="assets/images/about.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/aviralabout.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-7 w3l-about-info px-lg-4 align-center">
                     <h6 class="w3l-title-small mb-1">My Biography</h6>
@@ -343,7 +340,7 @@ Author URL: http://w3layouts.com
                     </div>
                 </div>
                 <div class="col-lg-5 ps-lg-5 my-image mt-lg-0 mt-4">
-                    <img src="assets/images/banner.png" alt="" class="img-fluid">
+                    <img src="assets/images/aviralbaner.png" alt="" class="img-fluid">
                 </div>
 
             </div>
@@ -571,26 +568,6 @@ Author URL: http://w3layouts.com
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
     <!-- //move top -->
 
     <!-- common jquery plugin -->
@@ -608,137 +585,21 @@ Author URL: http://w3layouts.com
     <!--/stats-number-counter-->
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-
-    </script>
     <!--//stats-number-counter-->
 
     <!--/owlcarousel-->
     <script src="assets/js/owl.carousel.js"></script>
-    <!-- //brands-->
-    <script>
-        $(document).ready(function() {
-            $("#owl-demo").owlCarousel({
-                loop: true,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                nav: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 2,
-                        nav: false
-                    },
-                    568: {
-                        items: 3,
-                        nav: false
-                    },
-                    768: {
-                        items: 4,
-                        nav: false
-                    }
-                }
-            })
-        })
-
-    </script>
-    <!-- //brands-->
-
-    <!-- /typig-text-->
-    <script>
-        const typedTextSpan = document.querySelector(".typed-text");
-        const cursorSpan = document.querySelector(".cursor");
-
-        const textArray = ["Web Designer", "Web Developer", "Photographer", "Freelancer"];
-        const typingDelay = 200;
-        const erasingDelay = 10;
-        const newTextDelay = 100; // Delay between current and next text
-        let textArrayIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } else {
-                cursorSpan.classList.remove("typing");
-                setTimeout(erase, newTextDelay);
-            }
-        }
-
-        function erase() {
-            if (charIndex > 0) {
-                // add class 'typing' if there's none
-                if (!cursorSpan.classList.contains("typing")) {
-                    cursorSpan.classList.add("typing");
-                }
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, 0);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } else {
-                cursorSpan.classList.remove("typing");
-                textArrayIndex++;
-                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-                setTimeout(type, typingDelay);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-            if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
-    </script>
-    <!-- //typig-text-->
-
-
+   
     <!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
     <script src="assets/js/jquery-1.7.2.js"></script>
     <script src="assets/js/jquery.quicksand.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
-
-    <!-- MENU-JS -->
-    <script>
-        $(window).on("scroll", function () {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 80) {
-                $("#site-header").addClass("nav-fixed");
-            } else {
-                $("#site-header").removeClass("nav-fixed");
-            }
-        });
-
-        //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function () {
-            $("header").toggleClass("active");
-        });
-        $(document).on("ready", function () {
-            if ($(window).width() > 991) {
-                $("header").removeClass("active");
-            }
-            $(window).on("resize", function () {
-                if ($(window).width() > 991) {
-                    $("header").removeClass("active");
-                }
-            });
-        });
-    </script>
-    <!-- //MENU-JS -->
-
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
-        });
-    </script>
-    <!-- //disable body scroll which navbar is in active -->
-
+    <!-- js file for this page  -->
+    <script src="assets/js/index.js"></script>
+    <!-- js file for this page  -->
+    
     <!--bootstrap-->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap-->
