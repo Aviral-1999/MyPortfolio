@@ -114,8 +114,19 @@
                         give your business a new Creative start right away!</p>
                     
                     <a class="btn btn-primary btn-style mt-5 me-2" href="contact.html"> Hire Me </a>
-                    <a class="btn btn-style transparent-btn mt-5" href="#portfolio"> My Portfolio </a>
-                    
+                    <a class="btn btn-style transparent-btn mt-5" onclick="openResumeModal()" href="#"> My Portfolio </a>
+                     <!-- Modal -->
+                    <div id="resumeModal" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-zoom">
+                    <!-- Close button -->
+                    <span onclick="closeResumeModal()" class="w3-button w3-display-topright">&times;</span>
+      
+                    <!-- Content container -->
+                    <div id="modalContent" class="w3-container">
+                    <!-- Content from the loaded HTML page will be inserted here -->
+                    </div>
+                </div>
+                </div>
                 </div>
                 <div class="col-lg-5 text-lg-end my-image mt-lg-0 mt-4">
                     <img src="assets/images/aviral.png" class="img-fluid" />

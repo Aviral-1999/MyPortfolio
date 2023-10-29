@@ -126,3 +126,31 @@ $('.counter').countUp();
             })
         });
 //disable body scroll which navbar is in active -->
+
+ // JavaScript functions to open and close the modal
+ function openResumeModal() {
+    // Fetch the content of the HTML page
+    fetch('/starter/portfolio.html')
+      .then(response => response.text())
+      .then(html => {
+        // Insert the content into the modal
+        document.getElementById('modalContent').innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error loading HTML page:', error);
+      });
+    // Get the modal element
+    var modal = document.getElementById('resumeModal');
+    // Display the modal
+    modal.style.display = 'block';
+
+    
+  }
+
+  function closeResumeModal() {
+    // Get the modal element
+    var modal = document.getElementById('resumeModal');
+    // Hide the modal
+    modal.style.display = 'none';
+    $("#resumeModal").hide()
+  }
